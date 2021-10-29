@@ -32,12 +32,12 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('pages/home');
 });
 
 app.get('/menu', async (req, res) => {
     const items = await Item.find({});
-    res.render('menu', { items });
+    res.render('pages/menu', { items });
 });
 
 
