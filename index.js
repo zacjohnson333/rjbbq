@@ -26,20 +26,18 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+
+
+
 app.get('/', (req, res) => {
     res.render('home');
 });
 
 app.get('/menu', async (req, res) => {
-    const item = new Item({
-        name: 'Brisket Sandwhich',
-        price: 15,
-        img: 'https://media.istockphoto.com/photos/braised-beef-short-rib-sandwich-on-a-brioche-bun-picture-id1216279532?k=20&m=1216279532&s=612x612&w=0&h=PP1V5b9YPb6K264vEZG9jVR2htq9FxisjlJ3ZSfDm1Q=',
-        description: 'A hefty portion of smoked brisket served on a brioche bun along with a pickle spear and a one side of your choice.'
-    });
-    await item.save();
-    res.send(item);
+    const items = await Item.find({});
+    res.render('menu', { items });
 });
+
 
 
 app.listen(3000, () => {
