@@ -46,6 +46,10 @@ app.get('/catering', async (req, res) => {
     res.render('pages/catering');
 });
 
+app.get('/story', async (req, res) => {
+    res.render('pages/story');
+});
+
 app.get('/contact', async (req, res) => {       // need to make a post route for contact? Not sure where to send it yet...
     res.render('pages/contact');
 });
