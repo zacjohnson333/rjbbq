@@ -44,11 +44,15 @@ app.get('/menu', catchAsync(async (req, res, next) => {
 
 app.get('/catering', async (req, res) => {
     res.render('pages/catering');
-})
+});
+
+app.get('/contact', async (req, res) => {       // need to make a post route for contact? Not sure where to send it yet...
+    res.render('pages/contact');
+});
 
 app.all('*', (req, res, next) => {                  // remember, since we are passing someting to next(), it will hit our basic error handler
     next(new ExpressError('Page Not Found', 404));
-})
+});
 
 app.use((err, req, res, next) => {          // basic error handler
     const { statusCode = 500 } = err;
