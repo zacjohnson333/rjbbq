@@ -42,6 +42,10 @@ app.get('/menu', catchAsync(async (req, res, next) => {
     res.render('pages/menu', { items });
 }));
 
+app.get('/catering', async (req, res) => {
+    res.render('pages/catering');
+})
+
 app.all('*', (req, res, next) => {                  // remember, since we are passing someting to next(), it will hit our basic error handler
     next(new ExpressError('Page Not Found', 404));
 })
