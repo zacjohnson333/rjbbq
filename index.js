@@ -5,7 +5,11 @@ const ejsMate = require('ejs-mate');    // an engine that makes sense of ejs
 const catchAsync = require('./utilities/catchAsync');
 const ExpressError = require('./utilities/ExpressError');
 const Item = require('./models/item');
-
+const menu = require('./routes/menu');
+const home = require('./routes/home');
+const catering = require('./routes/catering');
+const story = require('./routes/story');
+const contact = require('./routes/contact');
 
 
 
@@ -32,27 +36,12 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 
+app.use('/', home);
+app.use('/menu', menu);
+app.use('/catering', catering);
+app.use('/story', story);
+app.use('/contact', contact);
 
-app.get('/', (req, res) => {
-    res.render('pages/home');
-});
-
-app.get('/menu', catchAsync(async (req, res, next) => {
-    const items = await Item.find({});
-    res.render('pages/menu', { items });
-}));
-
-app.get('/catering', async (req, res) => {
-    res.render('pages/catering');
-});
-
-app.get('/story', async (req, res) => {
-    res.render('pages/story');
-});
-
-app.get('/contact', async (req, res) => {       // need to make a post route for contact? Not sure where to send it yet...
-    res.render('pages/contact');
-});
 
 app.all('*', (req, res, next) => {                  // remember, since we are passing someting to next(), it will hit our basic error handler
     next(new ExpressError('Page Not Found', 404));
