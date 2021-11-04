@@ -19,7 +19,9 @@ const map = new mapboxgl.Map({
     zoom: 9,
 });
 
+map.addControl(new mapboxgl.NavigationControl());
 
-const marker1 = new mapboxgl.Marker({color: 'orange'})
+
+const marker1 = new mapboxgl.Marker({ color: 'orange' })
     .setLngLat(coordinates)
     .addTo(map);
