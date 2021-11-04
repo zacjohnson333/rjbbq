@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -9,6 +13,7 @@ const menu = require('./routes/menu');
 const home = require('./routes/home');
 const catering = require('./routes/catering');
 const story = require('./routes/story');
+const next = require('./routes/next');
 const contact = require('./routes/contact');
 
 
@@ -42,6 +47,7 @@ app.use('/', home);
 app.use('/menu', menu);
 app.use('/catering', catering);
 app.use('/story', story);
+app.use('/next', next);
 app.use('/contact', contact);
 
 
