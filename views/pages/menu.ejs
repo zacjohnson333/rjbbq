@@ -2,267 +2,249 @@
     <h1 class="text-center">RJ's BBQ Menu</h1>
     <hr>
     <h2 class="text-center">Smoked Meats</h2>
-    <div class="card-group mb-3">
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[3].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[3].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[3].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[3].price %></small>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[4].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[4].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[4].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[4].price %></small>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[5].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[5].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[5].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[5].price %></small>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[6].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[6].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[6].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[6].price %></small>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[7].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[7].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[7].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[7].price %></small>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card-group">
+                <div class="card">
+                    <img src="<%= items[3].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[3].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[3].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[3].price %>
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="<%= items[4].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[4].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[4].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[4].price %>
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="<%= items[5].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[5].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[5].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[5].price %>
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="<%= items[6].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[6].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[6].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[6].price %>
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="<%= items[7].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[7].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[7].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[7].price %>
+                        </small>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <br>
-    <h2 class="text-center">Serving Sizes</h2>
-    <div class="card-group mb-3">
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[0].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[0].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[0].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[0].price %></small>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[1].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[1].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[1].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[1].price %></small>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[2].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[2].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[2].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[2].price %></small>
+    <h2 class="text-center mt-5">Serving Sizes</h2>
+    <div class="row">
+        <div class="col-md-10 offset-1">
+            <div class="card-group">
+                <div class="card">
+                    <img src="<%= items[0].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[0].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[0].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[0].price %>
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="<%= items[1].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[1].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[1].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[1].price %>
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="<%= items[2].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[2].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[2].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[2].price %>
+                        </small>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <br>
-    <h2 class="text-center">Sides</h2>
-    <div class="card-group mb-3">
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[8].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[8].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[8].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[8].price %></small>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[9].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[9].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[9].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[9].price %></small>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[10].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[10].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[10].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[10].price %></small>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[11].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[11].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[11].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[11].price %></small>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[12].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[12].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[12].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[12].price %></small>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="<%= items[13].img %>" class="card-img-top" alt="...">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <h5 class="card-title">
-                        <%= items[13].name %>
-                    </h5>
-                </li>
-                <li class="list-group-item">
-                    <p class="card-text">
-                        <%= items[13].description %>
-                    </p>
-                </li>
-            </ul>
-            <div class="card-footer">
-                <small class="text-muted">$<%= items[13].price %></small>
+    <h2 class="text-center mt-5">Sides</h2>
+    <div class="row">
+        <div class="col-md-12 mb-5">
+            <div class="card-group">
+                <div class="card">
+                    <img src="<%= items[8].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[8].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[8].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[8].price %>
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="<%= items[9].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[9].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[9].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[9].price %>
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="<%= items[10].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[10].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[10].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[10].price %>
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="<%= items[11].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[11].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[11].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[11].price %>
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="<%= items[12].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[12].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[12].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[12].price %>
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="<%= items[13].img %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= items[13].name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= items[13].description %>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            $<%= items[13].price %>
+                        </small>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

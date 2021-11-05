@@ -42,7 +42,7 @@ module.exports = [
         img: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
     },
     {
-        name: "Hot Links",
+        name: "Hot Links (loose)",
         price: 16,
         description: "You can't beat our RJ hot links. Full of savory spices, beef, pork, cheddar, and jalapenos to give you a little kick in the mouth!",
         img: "https://images.unsplash.com/photo-1594397108691-61fe6098c247?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGJicSUyMHNhdXNhZ2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
