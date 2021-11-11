@@ -3,30 +3,33 @@
         <div class="col-md-6 offset-3">
             <h3 class="text-center mb-4">Need to reach us? Fill out the form below</h3>
 
-            <form action="/contact" id="contact-form" method="POST" role="form">
+            <form action="/contact" id="contact-form" method="POST" role="form" novalidate class="validated-form">
                 <fieldset>
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input id="name" name="name" type="text" placeholder="Your name" class="form-control" required>
+                        <div class="valid-feedback">All set</div>
                     </div>
                     <div class="mb-3">
                         <label for="number" class="form-label">Number</label>
                         <input id="number" name="number" type="tel" placeholder="Your phone number" class="form-control"
                             required>
+                        <div class="valid-feedback">All set</div>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input id="email" name="email" type="text" placeholder="Your email" class="form-control"
                             required>
+                        <div class="valid-feedback">All set</div>
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
                         <textarea name="message" id="message" placeholder="Enter your message here" rows="3"
                             class="form-control" required></textarea>
+                        <div class="valid-feedback">All set</div>
                     </div>
                     <div>
                         <button type="submit" class="btn btn-success">Submit</button>
-                        <!--example used type="submit"-->
                     </div>
                 </fieldset>
             </form>
