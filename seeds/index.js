@@ -1,7 +1,12 @@
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+
 const mongoose = require('mongoose');
 const items = require('./items');
 const Item = require('../models/item');
-const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/rj-bbq'
+const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/rj-bbq';
+
 
 
 mongoose.connect(dbUrl, {
