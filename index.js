@@ -20,10 +20,10 @@ const contactSuccess = require('./routes/contact-success');
 const contactFailure = require('./routes/contact-failure');
 const sanitize = require('express-mongo-sanitize');
 const helmet = require('helmet');
+const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/rj-bbq'
 
 
-
-mongoose.connect('mongodb://localhost:27017/rj-bbq', {
+mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
