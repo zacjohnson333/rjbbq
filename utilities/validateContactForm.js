@@ -4,12 +4,12 @@ const ExpressError = require('./ExpressError');
 
 module.exports = (req, res, next) => {
     const contactSchema = Joi.object({
-        contact: Joi.object({
-            name: Joi.string().required(),
-            number: joiPhoneNumber.string().phoneNumber().required(),
-            email: Joi.string().email().required(),
-            message: Joi.string().required()
-        }).required()
+        // contact: Joi.object({
+        name: Joi.string().required(),
+        number: joiPhoneNumber.string().phoneNumber().required(),
+        email: Joi.string().email().required(),
+        message: Joi.string().required()
+        // }).required()
     })
     const { error } = contactSchema.validate(req.body);
     if (error) {
