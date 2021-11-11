@@ -10,7 +10,6 @@ const bodyParser = require('body-parser');
 const catchAsync = require('./utilities/catchAsync');
 const ExpressError = require('./utilities/ExpressError');
 const Item = require('./models/item');
-
 const menu = require('./routes/menu');
 const home = require('./routes/home');
 const catering = require('./routes/catering');
@@ -19,6 +18,8 @@ const next = require('./routes/next');
 const contact = require('./routes/contact');
 const contactSuccess = require('./routes/contact-success');
 const contactFailure = require('./routes/contact-failure');
+const sanitize = require('express-mongo-sanitize');
+const helmet = require('helmet');
 
 
 
@@ -44,8 +45,17 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(bodyParser.urlencoded({ extended: true }))          // do I even need body parser package?  I think so? but it is 
-// app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }))          // do I even need body parser package?  I think so? but it is depreicated
+app.use(express.json());
+app.use(sanitize({
+    replaceWith: '_'
+}));
+app.use(helmet({ contentSecurityPolicy: false }));  // did not follow the video completely cause it was jacking stuff up
+
+// app.use((req, res, next) => {
+//     console.log(req.query);
+//     next();
+// })
 
 
 
