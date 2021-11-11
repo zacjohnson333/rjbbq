@@ -80,7 +80,7 @@ app.use((err, req, res, next) => {          // basic error handler
 })
 
 
-
-app.listen(3000, () => {
-    console.log('Serving on port 3000');
+const port = process.env.PORT || 3000;    // automatically set on Heroku, usually 80
+app.listen(port, () => {
+    console.log(`Serving on port ${port}`);
 });
