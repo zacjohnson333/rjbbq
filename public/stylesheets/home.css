@@ -11,6 +11,17 @@ body {
     max-width: 60vw;
 }
 
+@font-face {
+    font-family: 'Empera-Regular';
+    src: url('public/fonts/Fonts/Empera-Regular.woff2') format('woff2'),
+         url('public/fonts/Fonts/Empera-Regular.woff') format('woff'),
+         url('public/fonts/Fonts/Empera-Regular.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'Empera-Regular', sans-serif;
+}
+
 .nav-link {
     padding: 0.25rem 0;
     font-weight: 700;

@@ -9,16 +9,33 @@
     height: 300px;
 }
 
+.footer {
+    background-color: #F77F00;
+}
+
+.footer-text {
+    color: white;
+}
+
+#designLink {
+    color: white;
+    text-decoration: none;
+}
+
+#designLink:hover {
+    text-decoration: underline;
+}
+
 .navbar {
     background-color: #F77F00;
 }
 
-.nav-link {
+/* .nav-link {
     color: #6F1A07;
 }
 navbar-brand {
     color: #6F1A07;
-}
+} */
 
 .story {
     text-indent: 10%;
