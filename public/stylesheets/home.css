@@ -40,6 +40,16 @@ h1 {
     border-bottom-color: white;
 }
 
+.designLink {
+    color: grey;
+    text-decoration: none;
+}
+
+.designLink:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
 .btn-secondary, .btn-secondary:hover {
     color: #333;
     text-shadow: none;

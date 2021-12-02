@@ -27,13 +27,14 @@
     color: white;
 }
 
-#designLink {
+.designLink {
     color: white;
     text-decoration: none;
 }
 
-#designLink:hover {
+.designLink:hover {
     text-decoration: underline;
+    color: white;
 }
 
 .navbar {
