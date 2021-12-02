@@ -12,7 +12,8 @@
 #btn-back-to-top {
     position: fixed;
     bottom: 5rem;
-    right: 1rem;
+    right: 2.5rem;
+    z-index: 1;
     display: none;
     background-color: #F77F00;
     border-color: #F77F00;
@@ -48,4 +49,18 @@ navbar-brand {
 
 .story {
     text-indent: 10%;
+}
+
+@media screen and (max-width: 768px){
+    #lisaStory {
+        margin-left: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .footer, .navbar {
+        width: 100%;
+    }
+    
 }
