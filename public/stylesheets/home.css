@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'empera';
+    src: url('../fonts/empera-regular-webfont.woff2') format('woff2'),
+         url('../fonts/empera-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'palmer-lake-print';
+    src: url('../fonts/Fonts/PalmerLakePrint-Regular.woff2') format('woff2'),
+         url('../fonts/Fonts/PalmerLakePrint-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(/images/20210530_144558.jpg);
@@ -11,15 +27,38 @@ body {
     max-width: 60vw;
 }
 
-@font-face {
-    font-family: 'Empera-Regular';
-    src: url('public/fonts/Fonts/Empera-Regular.woff2') format('woff2'),
-         url('public/fonts/Fonts/Empera-Regular.woff') format('woff'),
-         url('public/fonts/Fonts/Empera-Regular.ttf') format('truetype');
+h1 {
+    font-family: 'empera', sans-serif;
+    font-size: 3.5rem;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: white;
 }
 
-h1 {
-    font-family: 'Empera-Regular', sans-serif;
+nav {
+    font-family: 'palmer-lake-print';
+    font-size: 2rem;
+}
+
+#homeText {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.btn {
+    background: orange;
+    border-color: orange;
+    font-family: 'empera';
+    text-shadow: none;
+}
+
+.btn:hover {
+    background: white;
+    color: orange;
 }
 
 .nav-link {
@@ -40,6 +79,11 @@ h1 {
     border-bottom-color: white;
 }
 
+footer {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+}
+
 .designLink {
     color: grey;
     text-decoration: none;
@@ -48,10 +92,4 @@ h1 {
 .designLink:hover {
     text-decoration: underline;
     color: grey;
-}
-
-.btn-secondary, .btn-secondary:hover {
-    color: #333;
-    text-shadow: none;
-    font-weight: 700;
 }

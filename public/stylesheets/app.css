@@ -1,4 +1,20 @@
-.card-img-top {
+@font-face {
+    font-family: 'empera';
+    src: url('../fonts/empera-regular-webfont.woff2') format('woff2'),
+         url('../fonts/empera-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'palmer-lake-print';
+    src: url('../fonts/Fonts/PalmerLakePrint-Regular.woff2') format('woff2'),
+         url('../fonts/Fonts/PalmerLakePrint-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+card-img-top {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -41,12 +57,30 @@
     background-color: #F77F00;
 }
 
-/* .nav-link {
-    color: #6F1A07;
+.navbar-brand {
+    display: flex;
 }
-navbar-brand {
-    color: #6F1A07;
-} */
+
+strong {
+    font-family: 'empera', sans-serif;
+    font-size: 3.5rem;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: white;
+}
+
+.navbar-nav a {
+    font-family: 'palmer-lake-print';
+    font-size: 2.5rem;
+}
+
+.footer-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+}
 
 .story {
     text-indent: 10%;
