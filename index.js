@@ -11,6 +11,7 @@ const catchAsync = require('./utilities/catchAsync');
 const ExpressError = require('./utilities/ExpressError');
 const Item = require('./models/item');
 const menu = require('./routes/menu');
+const altMenu = require('./routes/altMenu');
 const home = require('./routes/home');
 const catering = require('./routes/catering');
 const story = require('./routes/story');
@@ -61,6 +62,7 @@ app.use(helmet({ contentSecurityPolicy: false }));  // did not follow the video 
 
 app.use('/', home);
 app.use('/menu', menu);
+app.use('/altMenu', altMenu);
 app.use('/catering', catering);
 app.use('/story', story);
 app.use('/next', next);
