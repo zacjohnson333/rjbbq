@@ -38,6 +38,11 @@ h1 {
     color: white;
 }
 
+img {
+    max-width: 16rem;
+    margin-bottom: 1rem;
+}
+
 nav {
     font-family: 'palmer-lake-print';
     font-size: 2rem;

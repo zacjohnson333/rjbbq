@@ -25,7 +25,25 @@ card-img-top {
     height: 300px;
 }
 
+/* General font styling */
+h1 {
+    font-family: 'palmer-lake-print', sans-serif;
+    font-size: 5rem;
+}
 
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: 'palmer-lake-print', sans-serif;
+    font-size: 2.5rem;
+}
+
+p, .btn {
+    font-family: 'Ubuntu', sans-serif;
+}
 
 /* PARTIALS STYLING */
 .navbar {
@@ -85,10 +103,19 @@ strong {
     color: white;
 }
 
-
 /* STORY STYLING */
 .story {
     text-indent: 10%;
+}
+
+/* NEXT STYLING */
+li {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* CONTACT STYLING */
+#contact-form {
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* ALT-MENU STYLING */
