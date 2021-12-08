@@ -66,6 +66,15 @@ nav {
     color: orange;
 }
 
+.fa-instagram {
+    margin-bottom: 1.5rem;
+    color: white;   
+}
+
+.fa-instagram:hover {
+    color: orange;
+}
+
 .nav-link {
     padding: 0.25rem 0;
     font-weight: 700;
