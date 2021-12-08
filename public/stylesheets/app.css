@@ -186,7 +186,7 @@ li {
     grid-column: 1/2;
     grid-row: 2/3;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(/images/food/pulled_pork0.jpg);
+        url(/images/food/pulled_pork0.JPG);
     background-size: cover;
     background-position: center;
 }
@@ -195,7 +195,7 @@ li {
     grid-column: 2/3;
     grid-row: 2/3;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/images/food/chicken3.jpg);
+    url(/images/food/chicken3.JPG);
     background-size: cover;
     background-position: center;}
 
@@ -647,7 +647,7 @@ background-position: center;}
     grid-column: 2/3;
     grid-row: 1/2;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/images/food/pickles.jpg);
+    url(/images/food/pickles.JPG);
     background-size: cover;
     background-position: center;
 }
