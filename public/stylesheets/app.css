@@ -132,3 +132,10 @@ li {
     }
     
 }
+
+@media (max-width: 414px) {
+    .navbar-brand strong {
+        font-size: 2.5rem;
+        padding-top: 1rem;
+    }
+}
