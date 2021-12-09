@@ -136,4 +136,7 @@ img {
         display: inline-block;
         max-height: 6rem;
     }
+    .cover-container {
+        max-width: 75vw;
+    }
 }
