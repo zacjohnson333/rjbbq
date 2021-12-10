@@ -7,11 +7,11 @@
     <!--FINALLY!!! NEEDED TO STRINGIFY COORDINATES (FROM ROUTES/NEXT.JS) SO THEY CAN BE SENT FROM THIS PAGE TO NEXTPAGEMAP.JS-->
     <!--ALSO, FORMAT ON SAVE HAS TO BE DISABLED WHEN USING JSON.STRINGIFY-->
 
-    <h1 class="text-center">We're always on the move!</h1>
-    <h2 class="text-center">Here's how you can find where we'll wind up next.</h2>
+    <h1 class="text-center" id="nextTitle">We're always on the move!</h1>
+    <h2 class="text-center" id="nextSubtitle">Here's how you can find where we'll wind up next.</h2>
     <div class="row mt-4">
         <div class="col-md-5 offset-1 mb-4">
-            <div class="card" style="width: 26rem;">
+            <div class="card"  id="locationCard">
                 <img src="/images/trailer/trailer_front2.jpg" id="nextImage" class="card-img-top" alt="...">
                 <ul class="list-group list-group-flush">
                     <!-- <li class="list-group-item"><span class="fw-bold">Location: </span>NAME OF PLACE...or event?</li> -->

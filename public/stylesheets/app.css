@@ -103,6 +103,26 @@ strong {
     color: white;
 }
 
+/* CATERING STYLING */
+.cateringImgs {
+    height: 400px;
+    width: auto;
+    object-fit: cover;
+}
+
+#cateringContactBtn {
+    background-color: orange;
+    color: white;
+    border-color: orange;
+    font-family: 'palmer-lake-print', sans-serif;
+    font-size: 2rem;
+}
+
+#cateringContactBtn:hover {
+    background-color: white;
+    color: orange;
+}
+
 /* STORY STYLING */
 .story {
     text-indent: 10%;
@@ -116,6 +136,21 @@ li {
 /* CONTACT STYLING */
 #contact-form {
     font-family: 'Ubuntu', sans-serif;
+}
+
+#sendBtn {
+    background-color: orange;
+    color: white;
+    border-color: orange;
+    font-family: 'palmer-lake-print';
+    font-size: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#sendBtn:hover {
+    background-color: white;
+    color: orange;
 }
 
 /* SCREEN CHANGE STYLING */
@@ -133,9 +168,30 @@ li {
     
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
     .navbar-brand strong {
         font-size: 2.5rem;
         padding-top: 1rem;
+    }
+    #cateringTitle {
+        font-size: 3.5rem;
+    }
+    #nextTitle {
+        font-size: 2.5rem;
+    }
+    #nextSubtitle {
+        font-size: 1rem;
+    }
+    #locationCard {
+        width: 20rem;
+    }
+    .carousel {
+        margin-bottom: 2rem;
+    }
+    .cateringImgs {
+        height: 300px;
+    }
+    #contactForm {
+        max-width: 90%;
     }
 }
