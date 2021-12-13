@@ -647,3 +647,147 @@
     grid-column: 2/3 ;
     grid-row: 6/7;
 }
+
+@media (max-width: 1000px) {
+    #meatContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 4fr 4fr 4fr;
+        row-gap: 0.75rem;
+    }
+    #meatTitle {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    #pulledPork {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #pulledChicken {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #beefBrisket {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #ribs {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #hotLinks {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #ribTips {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    #sandwichBasketContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 7fr 6fr);
+        row-gap: 0.75rem;
+    }
+    #sandwichTopContainer {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #sandwichBottomContainer {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #basketTopContainer {
+        grid-column: 1/2;
+        grid-row: 3/4
+    }
+    #basketBottomContainer {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #samplerSpecialsContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr 2fr 7fr 6fr;
+        row-gap: 0.75rem;
+    }
+    #samplerTopContainer {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #samplerBottomContainer {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #specialsTopContainer {
+        grid-column: 1/2;
+        grid-row: 3/4
+    }
+    #specialsBottomContainer {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #looseSidesContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 7fr 6fr);
+        row-gap: 0.75rem;
+    }
+    #looseMeatTopContainer {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #looseMeatBottomContainer {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #sidesTopContainer {
+        grid-column: 1/2;
+        grid-row: 3/4
+    }
+    #sidesBottomContainer {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+}
+
+@media (max-width: 376px){
+    #menuContainer {
+        max-width: 350px;
+    }
+    #meatContainer {
+        grid-template-columns: 350px;
+        grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 3fr;
+    }
+    #meatTitle {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #pulledPork {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #pulledChicken {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #beefBrisket {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #ribs {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    #hotLinks {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    #ribTips {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    #sandwichBasketContainer{
+        grid-template-columns: 350px;
+    }
+}
