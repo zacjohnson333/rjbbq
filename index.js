@@ -1,6 +1,8 @@
-if (process.env.NODE_ENV !== "production") {
-    require('dotenv').config();
-}
+// if (process.env.NODE_ENV !== "production") {
+//     require('dotenv').config();
+// }
+
+require('dotenv').config(); // Not how the class taught, testing
 
 const express = require('express');
 const path = require('path');
