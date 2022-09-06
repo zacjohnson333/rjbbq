@@ -7,7 +7,7 @@ module.exports = (req, res, next) => {
         // contact: Joi.object({
         name: Joi.string().required(),
         number: joiPhoneNumber.string().phoneNumber().required(),
-        email: Joi.string().email().required(),
+        email: Joi.string().email().required().trim(),
         message: Joi.string().required()
         // }).required()
     })
