@@ -24,7 +24,7 @@
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
-    color: orange;
+    color: #f36b21;
 }
 
 #menuContainer {
@@ -65,7 +65,7 @@
 }
 
 .meatDivider {
-    border-top: 4px solid orange;
+    border-top: 4px solid #f36b21;
     width: 70%;
     margin: auto;
 }
@@ -271,7 +271,7 @@
 }
 
 #meatLink:hover {
-    color: orange;
+    color: #f36b21;
 }
 
 #samplerSpecialsContainer {

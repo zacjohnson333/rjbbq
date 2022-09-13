@@ -64,21 +64,21 @@ nav {
 }
 
 .btn {
-    background: orange;
-    border-color: orange;
+    background: #f36b21;
+    border-color: #f36b21;
     font-family: 'empera';
     text-shadow: none;
 }
 
 .btn:hover {
     background: white;
-    color: orange;
+    color: #f36b21;
 }
 
 .fa-instagram {
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
-    color: orange;
+    color: #f36b21;
 }
 
 .fa-instagram:hover {
@@ -88,13 +88,13 @@ nav {
 .nav-link {
     padding: 0.25rem 0;
     font-weight: 700;
-    color: rgba(255, 123, 0, 0.808);
+    color: rgba(243, 107, 033, 0.808);
     margin-left: 1rem;
     border-bottom: 0.25rem solid transparent;
 }
 
 .nav-link:hover {
-    color: rgba(255, 123, 0, 0.808);
+    color: rgba(243, 107, 033, 0.808);
     border-bottom-color: rgba(255, 123, 0, 0.808);
 }
 

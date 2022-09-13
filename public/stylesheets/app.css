@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'empera';
     src: url('../fonts/empera-regular-webfont.woff2') format('woff2'),
-         url('../fonts/empera-regular-webfont.woff') format('woff');
+        url('../fonts/empera-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'palmer-lake-print';
     src: url('../fonts/Fonts/PalmerLakePrint-Regular.woff2') format('woff2'),
-         url('../fonts/Fonts/PalmerLakePrint-Regular.woff') format('woff');
+        url('../fonts/Fonts/PalmerLakePrint-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -41,13 +41,14 @@ h3 {
     font-size: 2.5rem;
 }
 
-p, .btn {
+p,
+.btn {
     font-family: 'Ubuntu', sans-serif;
 }
 
 /* PARTIALS STYLING */
 .navbar {
-    background-color: #F77F00;
+    background-color: #f36b21;
 }
 
 .navbar-brand {
@@ -58,10 +59,10 @@ strong {
     font-family: 'empera', sans-serif;
     font-size: 3.5rem;
     text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
     color: white;
 }
 
@@ -81,12 +82,12 @@ strong {
     right: 2.5rem;
     z-index: 1;
     display: none;
-    background-color: #F77F00;
-    border-color: #F77F00;
-  }
+    background-color: #f36b21;
+    border-color: #f36b21;
+}
 
 .footer {
-    background-color: #F77F00;
+    background-color: #f36b21;
 }
 
 .footer-text {
@@ -111,16 +112,16 @@ strong {
 }
 
 #cateringContactBtn {
-    background-color: orange;
+    background-color: #f36b21;
     color: white;
-    border-color: orange;
+    border-color: #f36b21;
     font-family: 'palmer-lake-print', sans-serif;
     font-size: 2rem;
 }
 
 #cateringContactBtn:hover {
     background-color: white;
-    color: orange;
+    color: #f36b21;
 }
 
 /* STORY STYLING */
@@ -139,9 +140,9 @@ li {
 }
 
 #sendBtn {
-    background-color: orange;
+    background-color: #f36b21;
     color: white;
-    border-color: orange;
+    border-color: #f36b21;
     font-family: 'palmer-lake-print';
     font-size: 2rem;
     padding-left: 20px;
@@ -150,22 +151,24 @@ li {
 
 #sendBtn:hover {
     background-color: white;
-    color: orange;
+    color: #f36b21;
 }
 
 /* SCREEN CHANGE STYLING */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     #lisaStory {
         margin-left: 1.5rem;
     }
-    
+
 }
 
-@media screen and (max-width: 768px){
-    .footer, .navbar {
+@media screen and (max-width: 768px) {
+
+    .footer,
+    .navbar {
         width: 100%;
     }
-    
+
 }
 
 @media (max-width: 415px) {
@@ -173,24 +176,31 @@ li {
         font-size: 2.5rem;
         padding-top: 1rem;
     }
+
     #cateringTitle {
         font-size: 3.5rem;
     }
+
     #nextTitle {
         font-size: 2.5rem;
     }
+
     #nextSubtitle {
         font-size: 1rem;
     }
+
     #locationCard {
         width: 20rem;
     }
+
     .carousel {
         margin-bottom: 2rem;
     }
+
     .cateringImgs {
         height: 300px;
     }
+
     #contactForm {
         max-width: 90%;
     }
