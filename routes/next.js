@@ -16,11 +16,11 @@ const geocoder = mbxGeocoding({ accessToken: mapBoxToken });
 // });
 
 const location = null
-const street = '10308 N Main St'
-const cityState = 'Richmond, IL'
-const zip = '60071'
-const date = '9/17/22'
-const time = '1:00pm to 8pm or until we sell out!'
+const street = '825 Indian Oaks Trail'
+const cityState = 'Marengo, IL'
+const zip = '60152'
+const date = '7/8/23'
+const time = '2:00pm to the fireworks'
 
 router.get('/', async (req, res) => {
     const geoData = await geocoder.forwardGeocode({
