@@ -16,11 +16,11 @@ const geocoder = mbxGeocoding({ accessToken: mapBoxToken });
 // });
 
 const location = null
-const street = '825 Indian Oaks Trail'
-const cityState = 'Marengo, IL'
-const zip = '60152'
-const date = '7/8/23'
-const time = '2:00pm to the fireworks'
+const street = '7000 Olson Road'
+const cityState = 'Union, IL'
+const zip = '60180'
+const date = '7/15/23'
+const time = '10:00am to 5:00pm'
 
 router.get('/', async (req, res) => {
     const geoData = await geocoder.forwardGeocode({
