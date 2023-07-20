@@ -19,8 +19,8 @@ const location = null
 const street = '7000 Olson Road'
 const cityState = 'Union, IL'
 const zip = '60180'
-const date = '7/15/23'
-const time = '10:00am to 5:00pm'
+const date = '7/12/23'
+const time = '10:30am to 5:00pm'
 
 router.get('/', async (req, res) => {
     const geoData = await geocoder.forwardGeocode({
