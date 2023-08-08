@@ -16,11 +16,11 @@ const geocoder = mbxGeocoding({ accessToken: mapBoxToken });
 // });
 
 const location = null
-const street = '7000 Olson Road'
-const cityState = 'Union, IL'
-const zip = '60180'
-const date = '7/22/23'
-const time = '10:30am to 5:00pm'
+const street = '8847 IL-76'
+const cityState = 'Belvidere, IL'
+const zip = '61008'
+const date = '8/8/23 - 8/13/23'
+const time = '10:30am to 9:30pm'
 
 router.get('/', async (req, res) => {
     const geoData = await geocoder.forwardGeocode({
