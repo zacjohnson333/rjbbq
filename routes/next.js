@@ -16,11 +16,11 @@ const geocoder = mbxGeocoding({ accessToken: mapBoxToken });
 // });
 
 const location = null
-const street = '11501 US Highway 14'
-const cityState = 'Woodstock, IL'
-const zip = '60098'
-const date = '9/2/23'
-const time = '11am to 5pm'
+const street = '9805 IL Route 173'
+const cityState = 'Hebron, IL'
+const zip = '60034'
+const date = '9/30/23'
+const time = '10:30am to 4:30pm'
 
 router.get('/', async (req, res) => {
     const geoData = await geocoder.forwardGeocode({
