@@ -19,7 +19,7 @@ const location = null
 const street = '11501 US-14 E'
 const cityState = 'Woodstock, IL'
 const zip = '60098'
-const date = '10/1423'
+const date = '10/14/23'
 const time = '11am to 5pm'
 
 router.get('/', async (req, res) => {
