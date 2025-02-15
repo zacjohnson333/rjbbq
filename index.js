@@ -71,8 +71,7 @@ app.use('/next', next);
 app.use('/contact', contact);
 app.use('/contact-success', contactSuccess);
 app.use('/contact-failure', contactFailure);
-// new contact below
-app.use('/newContact', newContact);
+
 
 
 app.all('*', (req, res, next) => {                  // remember, since we are passing someting to next(), it will hit our basic error handler
